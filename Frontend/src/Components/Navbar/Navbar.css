@@ -1,0 +1,100 @@
+
+.Navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1px 10px black;
+    z-index: 100;
+}
+
+.Navbar .logo{
+    width: 50px;
+    font-size: 20px;
+    line-height: 15px;
+    font-style: oblique;
+}
+
+.Navbar .nav-Item{
+    display: flex;
+}
+
+.Navbar .nav-Item li{
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+
+.Navbar .nav-Item .link{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.Navbar .nav-Item hr{
+    border: none;
+    width: 90%;
+    height: 3px;
+    margin-top: 6px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+
+.Navbar .buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Navbar .buttons button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(228, 228, 211);
+}
+
+.Navbar .buttons button:hover{
+    background-color: white;  
+}
+
+.Navbar .buttons .login{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500; 
+}
+
+.Navbar .buttons img{
+    width: 30px;
+    margin-left: 20px;
+}
+
+.Navbar .buttons .nav-cart-count{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .Navbar .nav-Item{
+        visibility: hidden;
+    }
+
+    .Navbar .buttons{
+        visibility: hidden;
+    }
+}

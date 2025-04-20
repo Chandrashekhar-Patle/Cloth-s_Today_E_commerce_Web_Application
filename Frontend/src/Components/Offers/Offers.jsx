@@ -1,0 +1,23 @@
+import "./Offers.css"
+import WomenRayon from "../../assets/Women_Rayon.jpg";
+function Offers() {
+    
+    return(
+        <>
+        <div className="Offers">
+            <div className="offers-left">
+                <h1>Exclusive</h1>
+                <h1>Offers for you</h1>
+                <p>ONLY ON BEST SELLERS PRODUCT</p>
+                <button>Check Now</button>
+            </div>
+
+            <div className="offers-right">
+                <img src={WomenRayon} alt="" />
+            </div>
+        </div>
+        </>
+    )
+}
+
+export default Offers;

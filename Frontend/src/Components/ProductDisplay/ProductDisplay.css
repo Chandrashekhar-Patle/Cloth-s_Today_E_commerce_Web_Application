@@ -1,0 +1,108 @@
+.productDisplay{
+    display: flex;
+    margin: 0px 100px;
+}
+
+.productDisplay-left{
+    display: flex;
+    gap: 15px;
+}
+
+.productDisplay-imgList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.productDisplay-imgList img{
+    height: 150px;
+}
+
+.productDisplay .productDisplay-main-img{
+    width: 550px;
+    height: 650px;
+}
+
+.productDisplay .rightSide{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productDisplay .rightSide h1{
+    color: #3d3d3d;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.rightSide .productDisplay-right-star{
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    gap: 10px;
+    color: #1d1d1d;
+    font-size: 16px;
+}
+
+.rightSide .productDisplay-right-star img{
+    width: 20px;  
+}
+
+.rightSide .prices{
+    display: flex;
+    margin: 30px 0;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.rightSide .newPrice{
+    color: #ff4141;
+}
+
+.rightSide .oldPrice{
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.rightSide .cloth-Size{
+    margin: 40px;
+    color: #656565;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rightSide .sizes{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.rightSide .sizes div{
+    padding: 15px 20px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.rightSide button{
+    padding: 15px 30px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #ff4141;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.rightSide .category{
+    margin: 10px;
+}
+
+.rightSide .category span{
+    font-weight: 600;
+}

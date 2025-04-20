@@ -1,0 +1,16 @@
+.Breadcrum{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 100px;
+    text-transform: capitalize;
+}
+
+.Breadcrum img{
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+}
