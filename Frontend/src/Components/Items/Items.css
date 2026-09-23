@@ -1,47 +1,65 @@
 
-.Items{
-    position: relative;
-    width: 270px;
-    height: 400px;
-    margin: 10px 0px;
-    background-color: rgb(228, 226, 224);
-    box-shadow: 1px 1px 1px rgb(48, 48, 48),
-    -1px -1px 1px rgb(48, 48, 48);
-}
-
-.Items img{
+.Items {
     position: relative;
     width: 100%;
-    height: 70%;
-    background-size: cover;
-
+    height: 390px;
+    border: 1px solid rgba(212, 165, 107, 0.2);
+    background-color: #f6f1ea;
+    border-radius: 22px;
+    background-color: #f3efe9;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(20, 20, 20, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.Items p{
-    margin: 6px 10px;
+
+.Items:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 54px rgba(17, 17, 17, 0.12);
+}
+
+.Items .product-Details {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px 16px 16px;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.05), rgba(255, 255, 255, 0.96));
+        color: #a76a2d;
+    backdrop-filter: blur(8px);
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.Items:hover .product-Details {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.Items p {
+    margin: 0;
+    color: #1a1a1a;
     font-size: 1rem;
     font-weight: 700;
 }
 
-.Items .items-prices{
+.Items .items-prices {
     display: flex;
-    gap: 20px;
-    padding-left: 10px;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
 }
 
-.Items .items-prices .new-price{
-    color: #313131;
-    font-size: 18px;
+.Items .items-prices .new-price {
+    color: #111827;
+    font-size: 1.08rem;
+    font-weight: 800;
+}
+
+.Items .items-prices .old-price {
+    text-decoration: line-through;
+    color: #6b7280;
+    font-size: 0.98rem;
     font-weight: 600;
 }
 
-.Items .items-prices .old-price{
-    text-decoration: line-through;
-    color: #8c8c8c;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.Items:hover{
-    transform: scale(1.05);
-    transition: 0.6s;
-}

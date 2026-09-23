@@ -1,6 +1,6 @@
 // +++++++++++++ Women Images +++++++++++++++++++++++++
-import GoSriki_Women from "./GoSriki_Women's_Rayon_Viscose.jpg"
-import Women_Saari_dashing_look from "./Women_Saari_image.jpeg"
+import GoSriki_Women from "./pexels-soldiervip.jpg"
+import Womens_Girls_Solid_Ribbed_Slim_Fit from "./Womens_Girls_Solid_Ribbed_Slim_Fit.jpg";
 import ShortSLeeveButtonDown from "./Short_SLeeve_Button_Down.jpg"
 import JockeySuperCombedCotton from "./Jockey_Super_Combed_Cotton.jpg"
 import Women_Stylish_Shirt from "./Women_Stylish_Shirt.jpg"
@@ -14,6 +14,8 @@ import Women_asymmetrical_line_flared_dress_jaipurivastra from "./Women_asymmetr
 import Women_party_wear_combo_western_dress_combo from "./Women-party-wear-combo-western-dress-combo-.webp"
 import Women_veni_vidi_vici from "./Women_veni-vidi-vici-.webp"
 import Women_vairagee from "./Women_vairagee-original.webp"
+import Womens_Cotton_Print_Midi_Maternity_Feeding_Nighty from "./Womens_Cotton_Print_Midi_Maternity_Feeding_Nighty.jpg"
+
 
 // ============== Men Images ===========================
 import Men_Cargo_Pants from "./Men_Cargo_Pants.jpg"
@@ -56,362 +58,370 @@ const allProduct = [
         newPrice: 549,
         oldPrice: 749
     },
-    
-        {
-            id: 2,
-            name: "Women blesser with Skirt",
-            image: Women_Saari_dashing_look,
-            category: "Women",
-            newPrice: 399,
-            oldPrice: 749
-        },
-        {
-            id: 3,
-            name: "Short SLeeve Button Down",
-            image: ShortSLeeveButtonDown,
-            category: "Women",
-            newPrice: 499,
-            oldPrice: 949
-        },
-        
-        {
-            id: 4,
-            name: "Jockey Super Combed Cotton",
-            image: JockeySuperCombedCotton,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
-        
 
-        {
-            id: 5,
-            name: "Men Lymio Casual Regular Shirt",
-            image: Men_Lymio_Casual_Regular_Shirt,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 749
-        },
-    
-    
-       
-        {
-            id: 6,
-            name: "Men Deelmo cotton blend",
-            image: Men_Deelmo_cotton_blend,
-            category: "Men",
-            newPrice: 749,
-            oldPrice: 1249
-        },
-    
-        {
-            id: 7,
-            name: "Men Symbol Premium",
-            image: MenSymbolPremium,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 749
-        },
-    
-        {
-            id: 8,
-            name: "Women Stylish Shirt",
-            image: Women_Stylish_Shirt,
-            category: "Women",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 2,
+        name: "Womens Girls Solid Ribbed Slim Fit",
+        image: Womens_Girls_Solid_Ribbed_Slim_Fit,
+        category: "Women",
+        newPrice: 399,
+        oldPrice: 749
+    },
+    {
+        id: 3,
+        name: "Short SLeeve Button Down",
+        image: ShortSLeeveButtonDown,
+        category: "Women",
+        newPrice: 499,
+        oldPrice: 949
+    },
 
-        {
-            id: 9,
-            name: "Women Pricess Fancy",
-            image: Women_Pricess_Fancy,
-            category: "Women",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 4,
+        name: "Jockey Super Combed Cotton",
+        image: JockeySuperCombedCotton,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 10,
-            name: "Kids_Girl_Casual_Shirt",
-            image: Kids_Girl_Casual_Shirt,
-            category: "Kid",
-            newPrice: 549,
-            oldPrice: 799
-        },
 
-        {
-            id: 11,
-            name: "Kids girls blo bloem",
-            image: Kids_girls_blo_bloem,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 5,
+        name: "Men Lymio Casual Regular Shirt",
+        image: Men_Lymio_Casual_Regular_Shirt,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 749
+    },
 
-        {
-            id: 12,
-            name: "Men Cargo Pants",
-            image: Men_Cargo_Pants,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
 
-        {
-            id: 13,
-            name: "Men Leotude Cotton Blend",
-            image: Men_Leotude_CottonBlend,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
 
-        {
-            id: 14,
-            name: "Men Majestic Checkered Slim",
-            image: Men_Majestic_Checkered_Slim,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 6,
+        name: "Men Deelmo cotton blend",
+        image: Men_Deelmo_cotton_blend,
+        category: "Men",
+        newPrice: 749,
+        oldPrice: 1249
+    },
 
-        {
-            id: 15,
-            name: "Mens Comfy Kurta Sets",
-            image: Mens_Comfy_Kurta_Sets,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 7,
+        name: "Men Symbol Premium",
+        image: MenSymbolPremium,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 749
+    },
 
-        {
-            id: 16,
-            name: "Mens Solid Slim Shirt",
-            image: Mens_Solid_Slim_Shirt,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 8,
+        name: "Women Stylish Shirt",
+        image: Women_Stylish_Shirt,
+        category: "Women",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 17,
-            name: "Men chataifull01 black ganesh enterprise",
-            image: Men_chataifull01_black_ganesh_enterprise,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 9,
+        name: "Women Pricess Fancy",
+        image: Women_Pricess_Fancy,
+        category: "Women",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 18,
-            name: "Men db02 den carbonn cloth",
-            image: Men_db02_den_carbonn_cloth,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 10,
+        name: "Kids_Girl_Casual_Shirt",
+        image: Kids_Girl_Casual_Shirt,
+        category: "Kid",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 19,
-            name: "Men fs wht lifeline",
-            image: Men_fs_wht_lifeline,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 11,
+        name: "Kids girls blo bloem",
+        image: Kids_girls_blo_bloem,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
 
-        {
-            id: 20,
-            name: "Men trnd blk krt trendi vastra",
-            image: Men_trnd_blk_krt_trendi_vastra,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 12,
+        name: "Men Cargo Pants",
+        image: Men_Cargo_Pants,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 21,
-            name: "Men cotton straight kurta with hand fabric",
-            image: Men_cotton_straight_kurta_with_hand_fabric,
-            category: "Men",
-            newPrice: 549,
-            oldPrice: 799
-        },
+    {
+        id: 13,
+        name: "Men Leotude Cotton Blend",
+        image: Men_Leotude_CottonBlend,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 22,
-            name: "Women aline dungree pinkclap fashion",
-            image: Women_aline_dungree_pinkclap_fashion,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 14,
+        name: "Men Majestic Checkered Slim",
+        image: Men_Majestic_Checkered_Slim,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 23,
-            name: "Women girls skirt blueficus",
-            image: Women_girls_skirt_blueficus,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 15,
+        name: "Mens Comfy Kurta Sets",
+        image: Mens_Comfy_Kurta_Sets,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 24,
-            name: "Women skirt black cuisinex",
-            image: Women_skirt_black_cuisinex,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 16,
+        name: "Mens Solid Slim Shirt",
+        image: Mens_Solid_Slim_Shirt,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 25,
-            name: "Women tandul",
-            image: Women_tandul,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 17,
+        name: "Men chataifull01 black ganesh enterprise",
+        image: Men_chataifull01_black_ganesh_enterprise,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 26,
-            name: "Women unstitched anirav",
-            image: Women_unstitched_anirav,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 18,
+        name: "Men db02 den carbonn cloth",
+        image: Men_db02_den_carbonn_cloth,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 27,
-            name: "Women asymmetrical line flared dress jaipurivastra",
-            image: Women_asymmetrical_line_flared_dress_jaipurivastra,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 19,
+        name: "Men fs wht lifeline",
+        image: Men_fs_wht_lifeline,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        
-        {
-            id: 28,
-            name: "Women party wear combo western dress combo",
-            image: Women_party_wear_combo_western_dress_combo,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 20,
+        name: "Men trnd blk krt trendi vastra",
+        image: Men_trnd_blk_krt_trendi_vastra,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 29,
-            name: "Women_veni_vidi_vici",
-            image: Women_veni_vidi_vici,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 21,
+        name: "Men cotton straight kurta with hand fabric",
+        image: Men_cotton_straight_kurta_with_hand_fabric,
+        category: "Men",
+        newPrice: 549,
+        oldPrice: 799
+    },
 
-        {
-            id: 30,
-            name: "Women_vairagee",
-            image: Women_vairagee,
-            category: "Women",
-            newPrice: 349,
-            oldPrice: 599
-        },
+    {
+        id: 22,
+        name: "Women aline dungree pinkclap fashion",
+        image: Women_aline_dungree_pinkclap_fashion,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 31,
-            name: "Kids black elite elegance apparel",
-            image: Kids_black_elite_elegance_apparel,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 23,
+        name: "Women girls skirt blueficus",
+        image: Women_girls_skirt_blueficus,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 32,
-            name: "Kids co ord set for baby",
-            image: Kids_co_ord_set_for_baby,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 24,
+        name: "Women skirt black cuisinex",
+        image: Women_skirt_black_cuisinex,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 33,
-            name: "Kids commando black pinamoni",
-            image: Kids_commando_black_pinamoni,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 25,
+        name: "Women tandul",
+        image: Women_tandul,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 34,
-            name: "Kids eva dolly kids raincoat fio fashinio",
-            image:  Kids_eva_dolly_kids_raincoat_fio_fashinio,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 26,
+        name: "Women unstitched anirav",
+        image: Women_unstitched_anirav,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 35,
-            name: "Kids fk tie set divisafashion",
-            image: Kids_fk_tie_set_divisafashion,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 27,
+        name: "Women asymmetrical line flared dress jaipurivastra",
+        image: Women_asymmetrical_line_flared_dress_jaipurivastra,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 36,
-            name: "Kids sky beach bajuds",
-            image: Kids_sky_beach_bajuds,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
 
-        {
-            id: 37,
-            name: "Kids yellow cloth adda",
-            image: Kids_yellow_cloth_adda,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 28,
+        name: "Women party wear combo western dress combo",
+        image: Women_party_wear_combo_western_dress_combo,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 38,
-            name: "Kids black cap ultrina",
-            image: Kids_black_cap_ultrina,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 29,
+        name: "Women_veni_vidi_vici",
+        image: Women_veni_vidi_vici,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 39,
-            name: "Kids joot ps collection",
-            image: Kids_joot_ps_collection,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 30,
+        name: "Women_vairagee",
+        image: Women_vairagee,
+        category: "Women",
+        newPrice: 349,
+        oldPrice: 599
+    },
 
-        {
-            id: 40,
-            name: "Kids top pallazo set jhilikgarments",
-            image: Kids_top_pallazo_set_jhilikgarments,
-            category: "Kid",
-            newPrice: 249,
-            oldPrice: 239
-        },
+    {
+        id: 31,
+        name: "Kids black elite elegance apparel",
+        image: Kids_black_elite_elegance_apparel,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
 
-       
+    {
+        id: 32,
+        name: "Kids co ord set for baby",
+        image: Kids_co_ord_set_for_baby,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 33,
+        name: "Kids commando black pinamoni",
+        image: Kids_commando_black_pinamoni,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 34,
+        name: "Kids eva dolly kids raincoat fio fashinio",
+        image: Kids_eva_dolly_kids_raincoat_fio_fashinio,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 35,
+        name: "Kids fk tie set divisafashion",
+        image: Kids_fk_tie_set_divisafashion,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 36,
+        name: "Kids sky beach bajuds",
+        image: Kids_sky_beach_bajuds,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 37,
+        name: "Kids yellow cloth adda",
+        image: Kids_yellow_cloth_adda,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 38,
+        name: "Kids black cap ultrina",
+        image: Kids_black_cap_ultrina,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 39,
+        name: "Kids joot ps collection",
+        image: Kids_joot_ps_collection,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 40,
+        name: "Kids top pallazo set jhilikgarments",
+        image: Kids_top_pallazo_set_jhilikgarments,
+        category: "Kid",
+        newPrice: 249,
+        oldPrice: 239
+    },
+
+    {
+        id: 41,
+        name: "Womens Cotton Print Midi Maternity Feeding Nighty",
+        image: Womens_Cotton_Print_Midi_Maternity_Feeding_Nighty,
+        category: "Women",
+        newPrice: 449,
+        oldPrice: 1299
+    },
+
 
 ]
 

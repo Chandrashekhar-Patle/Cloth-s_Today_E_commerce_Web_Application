@@ -11,6 +11,15 @@ function Product() {
     const {allProduct} = useContext(ShopContext);
     const {productId} = useParams();
     const product = allProduct.find((e)=> e.id === Number(productId))
+
+    if (!product) {
+        return (
+            <div className="product-not-found">
+                <h2>Product not found.</h2>
+                <p>Please return to the shop and choose a valid product.</p>
+            </div>
+        );
+    }
     
     return(
         <>
