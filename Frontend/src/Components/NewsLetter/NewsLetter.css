@@ -1,57 +1,76 @@
-.newsletter{
+.newsletter {
     position: relative;
-    width: 65%;
-    height: 40vh;
+    width: min(1180px, calc(100% - 30px));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    margin-top: 20px;
-    padding: 0px 140px;
-    margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
-    gap: 30px;
+    gap: 26px;
+    margin: 0 auto 120px;
+    padding: clamp(32px, 5vw, 80px) clamp(22px, 4vw, 60px);
+    border-radius: 30px;
+    background: linear-gradient(135deg, #fff1f2 0%, #eef2ff 45%, #ecfeff 100%);
+    box-shadow: 0 24px 50px rgba(76, 88, 120, 0.12);
+    text-align: center;
 }
 
-.newsletter h1{
-    color: #454545;
-    font-size: 52px;
-    font-weight: 600;
+.newsletter h1 {
+    color: #202020;
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.06em;
 }
 
-.newsletter p{
-    color: #454545;
-    font-size: 20px;
+.newsletter p {
+    color: #4b5563;
+    font-size: 1.05rem;
 }
 
-.newsletter .subscribe-box{
-    display:flex;
-    justify-content: space-between;
-    background: white;
+.newsletter .subscribe-box {
+    width: min(760px, 100%);
+    display: flex;
     align-items: center;
-    width: 730px;
-    height: 70px;
-    border-radius: 80px;
-    border: 1px solid #e3e3e3;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(28, 39, 58, 0.08);
 }
 
-.newsletter .subscribe-box input{
-    width: 500px;
-    margin-left: 30px;
+.newsletter .subscribe-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 22px 24px;
     border: none;
     outline: none;
-    color: #616161;
-    font-family: 'Poppins';
-    font-size: 16px;
+    background: transparent;
+    color: #374151;
+    font-size: 1rem;
 }
 
-.newsletter .subscribe-box button{
-    width: 210px;
+.newsletter .subscribe-box button {
+    min-width: 180px;
     height: 70px;
-    border-radius: 80px;
-    background: black;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #111827, #374151);
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
+}
+
+@media (max-width: 560px) {
+    .newsletter .subscribe-box {
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 12px;
+    }
+
+    .newsletter .subscribe-box input,
+    .newsletter .subscribe-box button {
+        width: 100%;
+        border-radius: 12px;
+    }
 }

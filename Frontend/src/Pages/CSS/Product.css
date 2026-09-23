@@ -1,3 +1,25 @@
-.product{
-    
+.product {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.product-not-found {
+    width: min(720px, calc(100% - 30px));
+    margin: 80px auto;
+    padding: 42px 28px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #fff1f2, #eef2ff);
+    text-align: center;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+}
+
+.product-not-found h2 {
+    color: #111827;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin-bottom: 10px;
+}
+
+.product-not-found p {
+    color: #475569;
+    font-size: 1rem;
 }

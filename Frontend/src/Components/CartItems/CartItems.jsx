@@ -5,7 +5,7 @@ import Cross_Icon from "../../assets/Cross_Icon.png";
 
 function CartItems() {
 
-    const { getTotalCartAmount, allProduct, cartItems, removeFromCart } = useContext(ShopContext);    
+    const { getTotalCartAmount, allProduct, cartItems, addToCart, removeFromCart } = useContext(ShopContext);    
     
     return (
         <>
@@ -27,9 +27,15 @@ function CartItems() {
                                 <img src={e.image} alt="" className="product-icon" />
                                 <p>{e.name}</p>
                                 <p>${e.newPrice}</p>
-                                <button className="quantity">{cartItems[e.id]}</button>
+                                <div className="quantity-wrap">
+                                    <button className="quantity-button" onClick={() => removeFromCart(e.id)}>-</button>
+                                    <button className="quantity">{cartItems[e.id]}</button>
+                                    <button className="quantity-button" onClick={() => addToCart(e.id)}>+</button>
+                                </div>
                                 <p>${e.newPrice * cartItems[e.id]}</p>
-                                <img src={Cross_Icon} onClick={() => removeFromCart(e.id)} alt="Remove cross icon" className="removeIcon"/>
+                                <button className="remove-button" onClick={() => removeFromCart(e.id)}>
+                                    <img src={Cross_Icon} alt="Remove cross icon" className="removeIcon"/>
+                                </button>
                             </div>
                             <hr />
                         </div>
@@ -50,7 +56,7 @@ function CartItems() {
                                 <p>Free</p>
                             </div>
                             <hr />
-                            <div className="cartItems-total-item">
+                            <div className="cartItems-total-item total-amount">
                                 <h3>Total</h3>
                                 <h3>${getTotalCartAmount()}</h3>
                             </div>

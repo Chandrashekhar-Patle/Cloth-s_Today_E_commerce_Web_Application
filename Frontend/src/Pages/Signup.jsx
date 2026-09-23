@@ -1,4 +1,6 @@
-import "./CSS/loginSignup.css"
+import "./CSS/loginSignup.css";
+import { NavLink } from "react-router-dom";
+
 
 function LoginSignup() {
     
@@ -19,7 +21,7 @@ function LoginSignup() {
                 </div>
 
                 <button>Continue</button>
-                <p className="loginsignup-login">Already have an account?<span>Login</span></p>
+                <p className="loginsignup-login">Already have an account?<NavLink to="/login">Login</NavLink></p>
             </div>
         </div>
         </>

@@ -1,13 +1,18 @@
+                    <div className="productDisplay-badge-row">
+                        <span className="productDisplay-badge">Luxury capsule</span>
+                        <span className="productDisplay-status">In stock</span>
+                    </div>
+import { useContext, useState } from "react";
 import "./ProductDisplay.css"
 import StarIcon from "../../assets/Star_Icon.avif";
 import Star_DullIcon from "../../assets/Star_dull_icon.jpeg";
-import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 
 function ProductDisplay(props) {
     const { product } = props;
-    const {addToCart} = useContext(ShopContext);
-    
+    const { addToCart } = useContext(ShopContext);
+    const [selectedSize, setSelectedSize] = useState("M");
+
     return (
         <>
             <div className="productDisplay">
@@ -19,8 +24,12 @@ function ProductDisplay(props) {
                         <img src={product.image} alt="" />
                     </div>
 
-                    <div className="productDisplay-img">
-                        <img className="productDisplay-main-img" src={product.image} alt="" />
+                    <div className="productDisplay-img" style={{
+                        backgroundImage: `url(${product.image})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                        backgroundSize: "cover"
+                    }}>
                     </div>
                 </div>
 
@@ -36,29 +45,32 @@ function ProductDisplay(props) {
                     </div>
 
                     <div className="prices">
-                        <p className="newPrice">{product.newPrice}</p>
-                        <p className="oldPrice">{product.oldPrice}</p>
+                        <p className="newPrice">${product.newPrice}</p>
+                        <p className="oldPrice">${product.oldPrice}</p>
                     </div>
 
                     <div className="description">
-                        A lightweight, usually knitted, pullover shirt, close fitting, 
-                        and with a round neck line short sleeves, worn as an undershirt or outer garment.
+                        Crafted for elevated everyday dressing, this statement piece balances tailored precision with an effortless drape. Designed in premium fabric with refined detailing for all-day comfort and a polished silhouette.
                     </div>
 
                     <div className="cloth-Size">
                         <h1>Select Size</h1>
                         <div className="sizes">
-                            <div>S</div>
-                            <div>M</div>
-                            <div>L</div>
-                            <div>XL</div>
-                            <div>XXL</div>
+                            {['S', 'M', 'L', 'XL', 'XXL'].map((size) => (
+                                <div
+                                    key={size}
+                                    className={selectedSize === size ? 'selected' : ''}
+                                    onClick={() => setSelectedSize(size)}
+                                >
+                                    {size}
+                                </div>
+                            ))}
                         </div>
                     </div>
 
-                    <button onClick={()=> {addToCart(product.id)}}>Add To Cart</button>
-                    <p className="category"><span>Category :</span>Women, T-Shirt, Crop Top</p>
-                    <p className="category"><span>Tags</span>Modern, Latest</p>
+                    <button onClick={() => addToCart(product.id)}>Add To Cart</button>
+                    <p className="category"><span>Category :</span> {product.category}, Fashion, Trend</p>
+                    <p className="category"><span>Selected Size :</span> {selectedSize}</p>
                 </div>
             </div>
         </>

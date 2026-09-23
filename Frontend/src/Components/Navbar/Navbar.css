@@ -1,100 +1,241 @@
 
-.Navbar{
-    position: relative;
+.Navbar {
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    padding: 10px 0px;
-    background-color: rgb(250, 250, 250);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 1px 10px black;
     z-index: 100;
-}
-
-.Navbar .logo{
-    width: 50px;
-    font-size: 20px;
-    line-height: 15px;
-    font-style: oblique;
-}
-
-.Navbar .nav-Item{
+    width: 100%;
+    min-height: 82px;
+    padding: 16px 5%;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    background: rgba(17, 17, 17, 0.8);
+    box-shadow: 0 10px 30px rgba(17, 17, 17, 0.18);
+    border-bottom: 1px solid rgba(212, 165, 107, 0.22);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow: 0 10px 30px rgba(17, 17, 17, 0.08);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.05);
 }
 
-.Navbar .nav-Item li{
-    list-style-type: none;
-    margin-right: 20px;
-    padding: 5px;
+.Navbar .logo {
+    min-width: 160px;
 }
 
-
-.Navbar .nav-Item .link{
-    color: black;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
+.Navbar .logo h1 {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    color: #f8f4ee;
 }
 
-.Navbar .nav-Item hr{
+.Navbar .search {
+    flex: 1;
+    max-width: 460px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(212, 165, 107, 0.35);
+    border-radius: 999px;
+    overflow: hidden;
+    background: #f9f9f8;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.Navbar .search #searchInputBox {
+    width: 100%;
+    height: 100%;
+    padding: 0 18px;
     border: none;
-    width: 90%;
+    outline: none;
+    background: transparent;
+    font-size: 0.96rem;
+    color: #292929;
+}
+
+.Navbar .search .searchButton {
+    padding: 0 22px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #d4a56b, #a76a2d);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.Navbar .search .searchButton:hover {
+    filter: brightness(1.08);
+}
+
+.Navbar .nav-Item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+}
+
+.Navbar .nav-Item li {
+    position: relative;
+    padding: 8px 0;
+}
+
+.Navbar .nav-Item .link {
+    color: #d4d3d3;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.Navbar .nav-Item .link:hover {
+    color: #f1d5a5;
+}
+
+.Navbar .nav-Item hr {
+    border: none;
+    width: 100%;
     height: 3px;
     margin-top: 6px;
-    border-radius: 10px;
-    background: #ff4141;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #f43f5e, #a855f7);
 }
 
-.Navbar .buttons{
+.Navbar .buttons {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 18px;
 }
-.Navbar .buttons button{
+
+.Navbar .buttons button {
     padding: 10px 20px;
-    border-radius: 20px;
-    background-color: rgb(228, 228, 211);
+    border: none;
+    border-radius: 999px;
+    background: #f3f4f6;
+    transition: 0.2s ease;
 }
 
-.Navbar .buttons button:hover{
-    background-color: white;  
+.Navbar .buttons button:hover {
+    background: #e5e7eb;
 }
 
-.Navbar .buttons .login{
+.Navbar .buttons .login {
+    color: #111827;
+    font-size: 0.95rem;
+    font-weight: 700;
     text-decoration: none;
-    color: black;
-    font-size: 1.2em;
-    font-weight: 500; 
 }
 
-.Navbar .buttons img{
-    width: 30px;
-    margin-left: 20px;
-}
-
-.Navbar .buttons .nav-cart-count{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
+.Navbar .cart-icon-wrap {
+    display: inline-flex;
     align-items: center;
-    margin-top: -30px;
-    margin-left: -30px;
-    border-radius: 11px;
-    font-size: 14px;
-    background: red;
-    color: white;
+    justify-content: center;
 }
 
-@media (max-width: 768px){
-    .Navbar .nav-Item{
-        visibility: hidden;
+.Navbar .buttons a img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+.Navbar .buttons .nav-cart-count {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+    margin-top: -28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ef4444, #f97316);
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(239, 68, 68, 0.35);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    border: none;
+    background: #f3f4f6;
+    border-radius: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .Navbar {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .Navbar .buttons{
-        visibility: hidden;
+    .Navbar .search {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        position: sticky;
+        padding: 14px 18px;
+        gap: 12px;
+        justify-content: space-between;
+    }
+
+    .Navbar .search {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Navbar .nav-Item {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 18px;
+        right: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px 16px 12px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .Navbar .nav-Item.open {
+        display: flex;
+    }
+
+    .Navbar .nav-Item li {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .Navbar .nav-Item .link {
+        display: block;
+        width: 100%;
+    }
+
+    .Navbar .buttons {
+        gap: 10px;
+    }
+
+    .Navbar .buttons button {
+        padding: 8px 14px;
     }
 }
