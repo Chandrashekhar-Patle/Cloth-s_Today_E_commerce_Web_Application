@@ -129,6 +129,122 @@
     text-decoration: none;
 }
 
+.Navbar .cart-control {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.Navbar .buttons .nav-cart-count {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.Navbar .account-control {
+    position: relative;
+}
+
+.Navbar .buttons .account-avatar {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 2px solid rgba(212, 165, 107, 0.75);
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4a56b, #a76a2d);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.Navbar .buttons .account-avatar:hover {
+    filter: brightness(1.08);
+}
+
+.Navbar .buttons .account-avatar:focus-visible,
+.Navbar .account-menu a:focus-visible,
+.Navbar .account-menu button:focus-visible {
+    outline: 3px solid #f1d5a5;
+    outline-offset: 3px;
+}
+
+.Navbar .account-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    z-index: 110;
+    width: 220px;
+    padding: 8px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.Navbar .account-menu-user {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 12px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    overflow-wrap: anywhere;
+}
+
+.Navbar .account-menu-user strong {
+    color: #111827;
+    font-size: 0.95rem;
+}
+
+.Navbar .account-menu-user span {
+    color: #64748b;
+    font-size: 0.82rem;
+}
+
+.Navbar .account-menu a,
+.Navbar .account-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: #334155;
+    font: inherit;
+    font-size: 0.92rem;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Navbar .account-menu a:hover,
+.Navbar .account-menu button:hover {
+    background: #f1f5f9;
+}
+
+.Navbar .account-menu button {
+    color: #b91c1c;
+}
+
+.Navbar .logout-error {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    max-width: min(420px, 90vw);
+    padding: 10px 14px;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 0.85rem;
+}
+
 .Navbar .cart-icon-wrap {
     display: inline-flex;
     align-items: center;

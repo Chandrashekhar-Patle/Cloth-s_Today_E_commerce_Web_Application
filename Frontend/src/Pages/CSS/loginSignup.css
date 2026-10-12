@@ -68,6 +68,13 @@
     text-align: center;
 }
 
+.loginsignup-error {
+    color: #b91c1c;
+    font-size: 0.9rem;
+    margin: 16px 0 -10px;
+    text-align: center;
+}
+
 .loginsignup-login a {
     color: #ef4444;
     margin-left: 6px;

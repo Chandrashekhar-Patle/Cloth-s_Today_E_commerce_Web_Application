@@ -1,7 +1,3 @@
-                    <div className="productDisplay-badge-row">
-                        <span className="productDisplay-badge">Luxury capsule</span>
-                        <span className="productDisplay-status">In stock</span>
-                    </div>
 import { useContext, useState } from "react";
 import "./ProductDisplay.css"
 import StarIcon from "../../assets/Star_Icon.avif";
@@ -15,6 +11,10 @@ function ProductDisplay(props) {
 
     return (
         <>
+            {/* <div className="productDisplay-badge-row">
+                <span className="productDisplay-badge">Luxury capsule</span>
+                <span className="productDisplay-status">In stock</span>
+            </div> */}
             <div className="productDisplay">
                 <div className="productDisplay-left">
                     <div className="productDisplay-imgList">

@@ -1,0 +1,235 @@
+.product-create-page {
+  width: min(880px, calc(100% - 32px));
+  margin: 48px auto 80px;
+  color: #17211d;
+}
+
+.product-create-heading {
+  margin-bottom: 24px;
+}
+
+.product-create-kicker {
+  margin-bottom: 8px;
+  color: #a04431;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.product-create-heading h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+}
+
+.product-create-heading > p:last-child {
+  margin-top: 10px;
+  color: #627067;
+}
+
+.product-create-form {
+  padding: clamp(20px, 4vw, 36px);
+  border: 1px solid #d9ded8;
+  background: #fff;
+}
+
+.product-create-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.product-create-field {
+  display: grid;
+  min-width: 0;
+  gap: 8px;
+  color: #29362f;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.product-create-field-wide {
+  grid-column: 1 / -1;
+}
+
+.product-create-field input,
+.product-create-field textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #cbd3cd;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fff;
+  color: #17211d;
+  font-weight: 400;
+}
+
+.product-create-field input:focus,
+.product-create-field textarea:focus {
+  outline: 2px solid #527660;
+  outline-offset: 1px;
+}
+
+.product-create-field textarea {
+  resize: vertical;
+}
+
+.product-create-field small {
+  color: #627067;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.product-create-input-prefix {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd3cd;
+  border-radius: 4px;
+  padding-left: 12px;
+  color: #627067;
+  font-weight: 500;
+}
+
+.product-create-input-prefix input {
+  border: 0;
+  border-radius: 0;
+}
+
+.product-create-active {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  color: #29362f;
+  font-weight: 700;
+}
+
+.product-create-active input {
+  width: 18px;
+  height: 18px;
+  accent-color: #315d43;
+}
+
+.product-create-section {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid #d9ded8;
+}
+
+.product-create-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.product-create-section-heading h2 {
+  font-size: 1.25rem;
+}
+
+.product-create-section-heading p {
+  margin-top: 5px;
+  color: #627067;
+  font-size: 0.9rem;
+}
+
+.product-create-add-button,
+.product-create-remove-button {
+  min-height: 40px;
+  border: 1px solid #315d43;
+  border-radius: 4px;
+  padding: 0 12px;
+  background: #fff;
+  color: #315d43;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.product-create-repeat-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px solid #e0e5e0;
+  background: #f8faf8;
+}
+
+.product-create-remove-button {
+  justify-self: start;
+  border-color: #a83224;
+  color: #8c2d22;
+}
+
+.product-create-message {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-left: 3px solid;
+  line-height: 1.5;
+}
+
+.product-create-message.is-error {
+  border-color: #a83224;
+  background: #fff1ed;
+  color: #7f241a;
+}
+
+.product-create-message.is-success {
+  border-color: #315d43;
+  background: #eef7f0;
+  color: #244932;
+}
+
+.product-create-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.product-create-actions button {
+  min-height: 44px;
+  border: 1px solid #315d43;
+  border-radius: 4px;
+  padding: 0 18px;
+  background: #fff;
+  color: #315d43;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.product-create-actions button[type="submit"] {
+  background: #315d43;
+  color: #fff;
+}
+
+.product-create-actions button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+@media (max-width: 600px) {
+  .product-create-page {
+    margin-top: 28px;
+  }
+
+  .product-create-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-create-repeat-row {
+    grid-template-columns: 1fr;
+  }
+
+  .product-create-field-wide {
+    grid-column: auto;
+  }
+
+  .product-create-section-heading {
+    flex-direction: column;
+  }
+
+  .product-create-actions {
+    flex-direction: column-reverse;
+  }
+}

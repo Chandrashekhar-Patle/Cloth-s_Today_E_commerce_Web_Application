@@ -10,13 +10,13 @@ import Login from './Pages/Login';
 import Singup from './Pages/Signup';
 import Footer from './Components/Footer/Footer';
 import ShopCategory from './Pages/ShopCategory';
-
 import KidsBanner from "./assets/Kids_banner.avif";
 import MensBanner from "./assets/Men_banner.avif";
 import WomensBanner from "./assets/Women_banner.jpeg";
 import LoginSignup from './Pages/Signup';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
+import ProductCreate from './Pages/ProductCreate';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,6 +38,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Singup />} />
       <Route path='/cart' element={<Cart />} />
+      <Route path='/admin/products/create' element={<ProductCreate />} />
     </Routes>
     <Footer />
     </BrowserRouter>
